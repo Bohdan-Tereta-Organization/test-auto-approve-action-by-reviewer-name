@@ -1,6 +1,8 @@
 name: Auto approve
 
-on: pull_request
+on: 
+  pull_request:
+    types: [opened, reopened, ready_for_review, review_requested]
 
 jobs:
   auto-approve:
@@ -11,3 +13,5 @@ jobs:
       - uses: Bohdan-Tereta/auto-approve-action-by-reviewer-name@v2
         with:
           review-message: "Auto approved automated PR"
+          reviewer: "Team1"
+          github-token: ${{ secrets.TEAM_1_SECRET }} 
