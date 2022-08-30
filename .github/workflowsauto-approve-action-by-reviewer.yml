@@ -1,0 +1,13 @@
+name: Auto approve
+
+on: pull_request
+
+jobs:
+  auto-approve:
+    runs-on: ubuntu-latest
+    permissions:
+      pull-requests: write
+    steps:
+      - uses: Bohdan-Tereta/auto-approve-action-by-reviewer-name@v2
+        with:
+          review-message: "Auto approved automated PR"
