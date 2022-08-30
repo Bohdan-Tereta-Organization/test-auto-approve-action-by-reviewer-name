@@ -13,3 +13,4 @@ jobs:
       - uses: Bohdan-Tereta/auto-approve-action-by-reviewer-name@v2
         with:
           review-message: "Auto approved automated PR"
+          reviewer: "Team1"
