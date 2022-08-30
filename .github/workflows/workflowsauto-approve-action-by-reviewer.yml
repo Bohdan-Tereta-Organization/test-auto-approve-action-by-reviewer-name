@@ -14,3 +14,4 @@ jobs:
         with:
           review-message: "Auto approved automated PR"
           reviewer: "Team1"
+          github-token: "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"
